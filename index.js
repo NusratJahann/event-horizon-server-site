@@ -10,7 +10,6 @@ app.use(cors());
 app.use(express.json())
 
 // const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.fppyswv.mongodb.net/?retryWrites=true&w=majority`;
-const uri = `mongodb+srv://event_horizon_admin:20ghx5Eue7H9k9wC@cluster0.fppyswv.mongodb.net/?retryWrites=true&w=majority`;
 
 const client = new MongoClient(uri, {serverApi: {version: ServerApiVersion.v1,strict: true,deprecationErrors: true,}});
 
